@@ -29,3 +29,4 @@ enum ChampionSpell : byte{
   special_1
 }
   
+throws FileNotFoundException
