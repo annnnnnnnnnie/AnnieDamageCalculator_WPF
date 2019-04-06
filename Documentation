@@ -30,3 +30,5 @@ enum ChampionSpell : byte{
 }
   
 throws FileNotFoundException
+
+may use DictionaryEntry instead of keyValuePair<T1,T2>
