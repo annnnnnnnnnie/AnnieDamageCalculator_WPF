@@ -34,3 +34,20 @@ throws FileNotFoundException
 may use DictionaryEntry instead of keyValuePair<T1,T2>
 
 Use :ICloneable instead of MakeCopy()
+
+Upon dealing damage, Enemy would trigger annie's event.
+class Hero{
+  public delegate void DealDamageHandler(object sender, DealDmgEventArgs e);
+  public class DealDmgEventArgs : EventArgs{
+    string message;
+    public DealDmgEventArgs(string msg){
+      message = msg;
+    }
+  }
+  public event DealDamageHandler dealDamage;
+  
+}
+
+{...
+  this.dealDamage +=//ok i confused
+}
