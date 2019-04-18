@@ -44,10 +44,10 @@ class Hero{
       message = msg;
     }
   }
-  public event DealDamageHandler dealDamage;
+  public event DealDamageHandler dealDamage;//Enemy's event
   
 }
 
 {...
-  this.dealDamage +=//ok i confused
+  enemy.dealDamage += AnnieDealtDamage();
 }
